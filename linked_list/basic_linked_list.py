@@ -21,6 +21,24 @@ def findLowestVal(head):
             minValue = currentNode.data
         currentNode = currentNode.next
     return minValue
+
+# Deleting node from linked list
+
+def deleteNode(head, deletedNode):
+    if head == deletedNode:
+        return head.next
+    
+    currentNode = head
+    
+    while currentNode.next and currentNode.next != deletedNode:
+        currentNode = currentNode.next 
+        
+    if currentNode.next == None:
+        return head
+    
+    currentNode.next = currentNode.next.next 
+    
+    return head
     
         
 node1 = Node(3)
@@ -34,5 +52,8 @@ node3.next = node4
 
 transverseAndPrint(node1)
 print(findLowestVal(node1))
+node1 = deleteNode(node1, node4)
+transverseAndPrint(node1)
+
 
 
