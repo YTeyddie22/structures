@@ -9,5 +9,17 @@ This is when the element to be accessed is the last element in the set
 
 To use sets, Python has it's own set data type to assist with the implementation
 
+'''
 
+'''
+HASH MAP
+
+Helps in fast searching, deletion, adding and modifying data
+
+The entry consists of key value pairs
+The key is a unique identifier for each entry in the map
+The hash code is the number generated for the key
+bucket store the entries
+
+Having a lot of buckets than hash map entries is a waste of memory and having a lot less buckets than the entries is a waste of time
 '''
