@@ -37,7 +37,7 @@ class HashSet:
             
     def print_set(self):
         print("Contents:")
-        [print(f'Bucket {index}" {bucket}') for index, bucket in enumerate(self.buckets)]
+        [print(f'Bucket {index}: {bucket}') for index, bucket in enumerate(self.buckets)]
     
     
     
